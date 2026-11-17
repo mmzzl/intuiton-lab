@@ -1,0 +1,22 @@
+# 依赖与本地环境
+node_modules/
+.pnpm-store/
+.env
+.env.*
+__pycache__/
+*.py[cod]
+
+# 构建产物与备份
+dist/
+unpackage/
+build/
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+
+# WorkBuddy 项目数据
+.workbuddy/

@@ -1,0 +1,35 @@
+{
+  "name": "intuition-lab-uniapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "直觉实验室 · 初高中物理与数学实验模拟器（H5 / 微信小程序 / App 三端同源，可打包 APK）",
+  "scripts": {
+    "dev:h5": "uni -p h5",
+    "build:h5": "uni build -p h5",
+    "preview:h5": "node serve-h5.mjs",
+    "dev:mp-weixin": "uni -p mp-weixin",
+    "build:mp-weixin": "uni build -p mp-weixin",
+    "dev:app": "uni -p app",
+    "build:app": "uni build -p app",
+    "check": "node --experimental-default-type=module scripts/check-experiments.mjs",
+    "new:exp": "node --experimental-default-type=module scripts/new-experiment.mjs",
+    "textbook:scan": "python scripts/extract-textbook.py",
+    "textbook:ocr": "python scripts/ocr-textbook.py",
+    "verify:h5": "node --experimental-default-type=module scripts/verify-h5.mjs"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-alpha-5030620261106001",
+    "@dcloudio/uni-app-plus": "3.0.0-alpha-5030620261106001",
+    "@dcloudio/uni-components": "3.0.0-alpha-5030620261106001",
+    "@dcloudio/uni-h5": "3.0.0-alpha-5030620261106001",
+    "@dcloudio/uni-mp-weixin": "3.0.0-alpha-5030620261106001",
+    "vue": "^3.4.21",
+    "vue-i18n": "^9.1.9",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@dcloudio/uni-cli-shared": "3.0.0-alpha-5030620261106001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-alpha-5030620261106001",
+    "vite": "5.2.8"
+  }
+}
